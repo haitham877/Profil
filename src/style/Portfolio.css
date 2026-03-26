@@ -1,0 +1,58 @@
+/* Portfolio.css */
+
+/* Container */
+.portfolio-container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f9fafb; /* Tailwind bg-gray-50 */
+  text-align: center;
+}
+
+/* Profilbild */
+.profile-pic-wrapper {
+  width: 128px;  /* w-32 */
+  height: 128px; /* h-32 */
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #3b82f6; /* blue-600 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.profile-pic-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name und Beschreibung */
+.portfolio-header h1 {
+  font-size: 2.5rem; /* text-4xl */
+  font-weight: 700;
+  color: #1f2937; /* gray-800 */
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-header p {
+  color: #4b5563; /* gray-600 */
+  font-size: 1.125rem; /* text-lg */
+}
+
+/* Projekte Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Footer */
+.portfolio-footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: #4b5563;
+}
+.profile-pic-wrapper:hover {
+  transform: scale(1.8); }
